@@ -1,0 +1,76 @@
+
+W:/ECE243/Lab4/Part2/part2.axf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <__cs3_interrupt_vector>:
+/* Program that counts consecutive 1's */
+
+			.text                   // executable code follows
+			.global _start                  
+_start:     MOV		R4, #TEST_NUM	// R4 will hold the address of the next data word
+   0:	e3a04048 	mov	r4, #72	; 0x48
+			MOV		R5, #0			// R5 will hold longest string of ones
+   4:	e3a05000 	mov	r5, #0
+
+00000008 <MAIN>:
+MAIN:		LDR		R1, [R4], #4	// R1 <- next word
+   8:	e4941004 	ldr	r1, [r4], #4
+			CMP		R1, #0
+   c:	e3510000 	cmp	r1, #0
+			BEQ		END				// 0 indicates the end of the list
+  10:	0a000003 	beq	24 <END>
+			BL		ONES			// Count longest string of 1's
+  14:	eb000003 	bl	28 <ONES>
+			CMP		R5, R0			// Result is returned in 0
+  18:	e1550000 	cmp	r5, r0
+			MOVLT	R5, R0			// Store greater value in R5
+  1c:	b1a05000 	movlt	r5, r0
+			B		MAIN			// Keep looping until the list is done
+  20:	eafffff8 	b	8 <MAIN>
+
+00000024 <END>:
+
+END:		B		END
+  24:	eafffffe 	b	24 <END>
+
+00000028 <ONES>:
+
+// Subroutine ONES to find longest string of ones in R1
+// Result is returned in R0
+ONES:		MOV     R0, #0          // R0 will hold the result
+  28:	e3a00000 	mov	r0, #0
+
+0000002c <LOOP>:
+LOOP:   	CMP     R1, #0          
+  2c:	e3510000 	cmp	r1, #0
+			BEQ     END_ONES        // loop until the data contains no more 1's     
+  30:	0a000003 	beq	44 <END_ONES>
+			LSR     R2, R1, #1      // perform SHIFT, followed by AND
+  34:	e1a020a1 	lsr	r2, r1, #1
+			AND     R1, R1, R2      
+  38:	e0011002 	and	r1, r1, r2
+			ADD     R0, #1          // count the string length so far
+  3c:	e2800001 	add	r0, r0, #1
+			B       LOOP            
+  40:	eafffff9 	b	2c <LOOP>
+
+00000044 <END_ONES>:
+END_ONES:   MOV		PC, LR   		// Return
+  44:	e1a0f00e 	mov	pc, lr
+
+00000048 <TEST_NUM>:
+  48:	103fe00f 	.word	0x103fe00f
+  4c:	111ff332 	.word	0x111ff332
+  50:	12345678 	.word	0x12345678
+  54:	af428039 	.word	0xaf428039
+  58:	724c8831 	.word	0x724c8831
+  5c:	a92ee391 	.word	0xa92ee391
+  60:	e0d4bd47 	.word	0xe0d4bd47
+  64:	8f8adad8 	.word	0x8f8adad8
+  68:	dfa7ea48 	.word	0xdfa7ea48
+  6c:	e99e1b93 	.word	0xe99e1b93
+  70:	a4cc303b 	.word	0xa4cc303b
+  74:	da87b4e7 	.word	0xda87b4e7
+  78:	00000000 	.word	0x00000000

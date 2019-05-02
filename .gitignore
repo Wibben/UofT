@@ -10,4 +10,14 @@
 /MIE100/
 /OSAP/
 /Skule Nite/
+*.m~
+Important Passwords.txt
+/ECE297/
+/ECE241/
+!/ECE241/Lab*/*/*.v
+!/ECE241/Lab*/*/*.do
+!/ECE241/Lab*/*/*.qsf
+!/ECE241/Lab*/*/*.qpf
+!/ECE241/Lab*/*/*.pdf
+
 

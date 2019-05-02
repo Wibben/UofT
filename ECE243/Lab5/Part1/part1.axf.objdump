@@ -1,0 +1,110 @@
+
+W:/ECE243/Lab5/Part1/part1.axf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <__cs3_interrupt_vector>:
+ * 3 - Clear (any key after that will set to 0)
+ */
+			.text
+			.global _start
+			
+_start:		LDR		R6, =0xFF200020		// HEX3-HEX0 Address
+   0:	e59f6094 	ldr	r6, [pc, #148]	; 9c <BIT_CODES+0xc>
+			LDR 	R7, =0xFF200050		// KEY Address
+   4:	e59f7094 	ldr	r7, [pc, #148]	; a0 <BIT_CODES+0x10>
+			MOV		R8, #BIT_CODES		// Address of BIT_CODES array
+   8:	e3a08090 	mov	r8, #144	; 0x90
+			MOV		R0, #0				// R0 will be the counter
+   c:	e3a00000 	mov	r0, #0
+
+00000010 <MAIN>:
+MAIN:		LDR 	R5, [R7]			// Read KEYs
+  10:	e5975000 	ldr	r5, [r7]
+			CMP		R5, #0
+  14:	e3550000 	cmp	r5, #0
+			BEQ		DISPLAY				// Check is no KEY has been pressed
+  18:	0a000019 	beq	84 <DISPLAY>
+			MOV		R4, R5				// Store KEY value when a key has been pressed
+  1c:	e1a04005 	mov	r4, r5
+
+00000020 <WAIT>:
+WAIT:		LDR		R5, [R7]			// Poll KEYs to see if the KEY has been released
+  20:	e5975000 	ldr	r5, [r7]
+			CMP		R5, #0
+  24:	e3550000 	cmp	r5, #0
+			BNE		WAIT				// Wait for KEY to be released
+  28:	1afffffc 	bne	20 <WAIT>
+
+0000002c <ZERO>:
+
+// Check which key has been pressed and act accordingly			
+ZERO:		CMP		R4, #0b0001			// Check if KEY0 is pressed
+  2c:	e3540001 	cmp	r4, #1
+			BNE		INCREMENT
+  30:	1a000001 	bne	3c <INCREMENT>
+			MOV		R0, #0				// Set counter to 0
+  34:	e3a00000 	mov	r0, #0
+			B		DISPLAY
+  38:	ea000011 	b	84 <DISPLAY>
+
+0000003c <INCREMENT>:
+INCREMENT:	CMP		R4, #0b0010			// Check if KEY1 is pressed
+  3c:	e3540002 	cmp	r4, #2
+			BNE		DECREMENT
+  40:	1a000003 	bne	54 <DECREMENT>
+			ADD		R0, #1				// Increment counter
+  44:	e2800001 	add	r0, r0, #1
+			CMP		R0, #10				// Counter goes from 0 to 9, so wrap to 0 if = 10
+  48:	e350000a 	cmp	r0, #10
+			MOVEQ	R0, #0
+  4c:	03a00000 	moveq	r0, #0
+			B		DISPLAY
+  50:	ea00000b 	b	84 <DISPLAY>
+
+00000054 <DECREMENT>:
+DECREMENT:	CMP		R4, #0b0100			// Check if KEY2 is pressed
+  54:	e3540004 	cmp	r4, #4
+			BNE		CLEAR
+  58:	1a000002 	bne	68 <CLEAR>
+			SUBS	R0, #1				// Decrement counter
+  5c:	e2500001 	subs	r0, r0, #1
+			MOVMI	R0, #9				// Counter goes from 0 to 9, so wrap to 9 if =-1
+  60:	43a00009 	movmi	r0, #9
+			B		DISPLAY
+  64:	ea000006 	b	84 <DISPLAY>
+
+00000068 <CLEAR>:
+CLEAR:		MOV		R1, #0				// If it gets to here KEY3 is definitely pressed
+  68:	e3a01000 	mov	r1, #0
+			STRB	R1, [R6]			// Set HEX to blank
+  6c:	e5c61000 	strb	r1, [r6]
+
+00000070 <CLEAR_WAIT>:
+CLEAR_WAIT:	LDR		R5, [R7]			// Wait for any KEY to be pressed
+  70:	e5975000 	ldr	r5, [r7]
+			CMP		R5, #0
+  74:	e3550000 	cmp	r5, #0
+			BEQ		CLEAR_WAIT
+  78:	0afffffc 	beq	70 <CLEAR_WAIT>
+			MOV		R4, #0b0001			// Set the KEY pressed to be "KEY0"
+  7c:	e3a04001 	mov	r4, #1
+			B		WAIT				// Wait for the KEY to be released
+  80:	eaffffe6 	b	20 <WAIT>
+
+00000084 <DISPLAY>:
+			
+DISPLAY:	LDRB	R1, [R8, +R0]		// Get digit to display
+  84:	e7d81000 	ldrb	r1, [r8, r0]
+			STRB	R1, [R6]			// Display to HEX0
+  88:	e5c61000 	strb	r1, [r6]
+			B		MAIN				// Program infinitely counts/loops
+  8c:	eaffffdf 	b	10 <MAIN>
+
+00000090 <BIT_CODES>:
+  90:	4f5b063f 	.word	0x4f5b063f
+  94:	077d6d66 	.word	0x077d6d66
+  98:	0000677f 	.word	0x0000677f
+  9c:	ff200020 	.word	0xff200020
+  a0:	ff200050 	.word	0xff200050

@@ -1,0 +1,157 @@
+
+W:/ECE243/Lab4/Part3/part3.axf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <__cs3_interrupt_vector>:
+/* Program that counts the longest string of 
+   0's, 1's, and alternating 1's and 0's */
+			.text
+			.global _start
+
+_start:		MOV		R4, #TEST_NUM		// R4 will hold the address of the next data word
+   0:	e3a040bc 	mov	r4, #188	; 0xbc
+			MOV		R5, #0				// R5 will hold length of the string of 1's
+   4:	e3a05000 	mov	r5, #0
+			MOV		R6, #0				// R6 will hold length of the string of 0's
+   8:	e3a06000 	mov	r6, #0
+			MOV		R7, #0				// R7 will hold length of the string of alternating 1's and 0's
+   c:	e3a07000 	mov	r7, #0
+
+00000010 <MAIN>:
+
+
+MAIN:		LDR		R1, [R4]			// R1 <- next word
+  10:	e5941000 	ldr	r1, [r4]
+			CMP		R1, #0
+  14:	e3510000 	cmp	r1, #0
+			BEQ		END					// 0 indicates the end of the list
+  18:	0a00000b 	beq	4c <END>
+			BL		ONES				// Count longest string of 1's, passes in R1
+  1c:	eb00000b 	bl	50 <ONES>
+			CMP		R5, R0				// Result is returned in 0
+  20:	e1550000 	cmp	r5, r0
+			MOVLT	R5, R0				// Store greater value in R5
+  24:	b1a05000 	movlt	r5, r0
+			LDR		R1, [R4]			// R1 <- same word
+  28:	e5941000 	ldr	r1, [r4]
+			BL		ZEROS				// Count longest string of 0's, passes in R1
+  2c:	eb000010 	bl	74 <ZEROS>
+			CMP		R6, R0				// Result returned in R0
+  30:	e1560000 	cmp	r6, r0
+			MOVLT	R6, R0				// Store greater value in R6
+  34:	b1a06000 	movlt	r6, r0
+			LDR		R1, [R4], #4		// R1 <- same word, R4 moves onto next word
+  38:	e4941004 	ldr	r1, [r4], #4
+			BL		ALTS				// Count longest string of altenrates, passes in R1
+  3c:	eb000012 	bl	8c <ALTS>
+			CMP		R7, R0				// Result returned in R0
+  40:	e1570000 	cmp	r7, r0
+			MOVLT	R7, R0				// Store greater value in R7
+  44:	b1a07000 	movlt	r7, r0
+			B		MAIN				// Keep looping until the list is done
+  48:	eafffff0 	b	10 <MAIN>
+
+0000004c <END>:
+
+END:		B		END
+  4c:	eafffffe 	b	4c <END>
+
+00000050 <ONES>:
+
+// Subroutine ONES to find longest string of 1's in R1
+// Result is returned in R0
+ONES:		PUSH	{R2,LR}				// Store used registers in stack
+  50:	e92d4004 	push	{r2, lr}
+			MOV     R0, #0          	// R0 will hold the result
+  54:	e3a00000 	mov	r0, #0
+
+00000058 <LOOP>:
+LOOP:   	CMP     R1, #0          
+  58:	e3510000 	cmp	r1, #0
+			BEQ     END_ONES        	// loop until the data contains no more 1's     
+  5c:	0a000003 	beq	70 <END_ONES>
+			LSR     R2, R1, #1      	// perform SHIFT, followed by AND
+  60:	e1a020a1 	lsr	r2, r1, #1
+			AND     R1, R1, R2      
+  64:	e0011002 	and	r1, r1, r2
+			ADD     R0, #1          	// count the string length so far
+  68:	e2800001 	add	r0, r0, #1
+			B       LOOP            
+  6c:	eafffff9 	b	58 <LOOP>
+
+00000070 <END_ONES>:
+END_ONES:   POP		{R2,PC}   			// Return
+  70:	e8bd8004 	pop	{r2, pc}
+
+00000074 <ZEROS>:
+
+// Subroutine ZEROS to find longest string of 0's in R1
+// Result is returned in R0
+// This can be done by complementing R1 and 
+// counting the longest string of 1's
+ZEROS:		PUSH	{R2,LR}				// Store used registes in stack
+  74:	e92d4004 	push	{r2, lr}
+			MOV		R2, #ALL_F			// Put string of all 1's into R2
+  78:	e3a020f0 	mov	r2, #240	; 0xf0
+			LDR		R2, [R2]
+  7c:	e5922000 	ldr	r2, [r2]
+			EOR		R1, R2				// Complement R1
+  80:	e0211002 	eor	r1, r1, r2
+			BL		ONES				// Count longest string of 1's, passes in R1
+  84:	ebfffff1 	bl	50 <ONES>
+			POP		{R2,PC}				// Pop LR(from stack) into PC to return, R0 is returned
+  88:	e8bd8004 	pop	{r2, pc}
+
+0000008c <ALTS>:
+
+// Subroutine ALTS to find longest alternating string in R1
+// Result is returned in R0
+// This can be done by XOR-ing R1 with an alternating string of 1's and 0's
+// and then counting the longest string of 1's as well as 0's and returning the max
+ALTS:		PUSH	{R2,R3,R4,LR}		// Store used registers in stack
+  8c:	e92d401c 	push	{r2, r3, r4, lr}
+			MOV		R4, #ALTERNATES		
+  90:	e3a040f4 	mov	r4, #244	; 0xf4
+			LDR		R4, [R4]			// Put string of alternating 1's and 0's into R4
+  94:	e5944000 	ldr	r4, [r4]
+			MOV		R2, R1				// Store the initial value of R1 in R2 to be used again later
+  98:	e1a02001 	mov	r2, r1
+			EOR		R1, R4				// XOR R1 with alternating 1's and 0's
+  9c:	e0211004 	eor	r1, r1, r4
+			BL		ONES				// Count longest string of 1's, passes in R1
+  a0:	ebffffea 	bl	50 <ONES>
+			MOV		R3, R0				// Result returned in R0, store in R3 to compare later
+  a4:	e1a03000 	mov	r3, r0
+			EOR		R1, R2, R4			// XOR R2 (initial R1) with alternating 1's and 0's
+  a8:	e0221004 	eor	r1, r2, r4
+			BL		ZEROS				// Count longest string of 0's, passes in R1
+  ac:	ebfffff0 	bl	74 <ZEROS>
+			CMP		R0, R3				// Result returned in R0, put greater value in R0
+  b0:	e1500003 	cmp	r0, r3
+			MOVLT	R0, R3
+  b4:	b1a00003 	movlt	r0, r3
+			POP		{R2,R3,R4,PC}		// Return
+  b8:	e8bd801c 	pop	{r2, r3, r4, pc}
+
+000000bc <TEST_NUM>:
+  bc:	103fe00f 	.word	0x103fe00f
+  c0:	111ff332 	.word	0x111ff332
+  c4:	12345678 	.word	0x12345678
+  c8:	af428039 	.word	0xaf428039
+  cc:	724c8831 	.word	0x724c8831
+  d0:	a92ee391 	.word	0xa92ee391
+  d4:	e0d4bd47 	.word	0xe0d4bd47
+  d8:	8f8adad8 	.word	0x8f8adad8
+  dc:	dfa7ea48 	.word	0xdfa7ea48
+  e0:	e99e1b93 	.word	0xe99e1b93
+  e4:	a4cc303b 	.word	0xa4cc303b
+  e8:	ffffffff 	.word	0xffffffff
+  ec:	00000000 	.word	0x00000000
+
+000000f0 <ALL_F>:
+  f0:	ffffffff 	.word	0xffffffff
+
+000000f4 <ALTERNATES>:
+  f4:	aaaaaaaa 	.word	0xaaaaaaaa

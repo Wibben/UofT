@@ -1,0 +1,137 @@
+
+W:/ECE243/Lab5/Part3/part3.axf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <__cs3_interrupt_vector>:
+ * at a rate of 4Hz, pressing any key will stop/start the conter
+ */
+			.text
+			.global _start
+			
+_start:		LDR		R9, =0xFFFEC600		// A9 private timer address
+   0:	e59f90c0 	ldr	r9, [pc, #192]	; c8 <BIT_CODES+0xc>
+			LDR		R4, =50000000		// 0.25 seconds on 200MHz clock
+   4:	e59f40c0 	ldr	r4, [pc, #192]	; cc <BIT_CODES+0x10>
+			STR		R4, [R9]
+   8:	e5894000 	str	r4, [r9]
+			MOV		R4, #0b011			// Start timer and set it to auto-reload
+   c:	e3a04003 	mov	r4, #3
+			STR		R4, [R9, #0x8]
+  10:	e5894008 	str	r4, [r9, #8]
+			LDR		R6, =0xFF200020		// HEX3-HEX0 Address
+  14:	e59f60b4 	ldr	r6, [pc, #180]	; d0 <BIT_CODES+0x14>
+			LDR 	R7, =0xFF200050		// KEY Address
+  18:	e59f70b4 	ldr	r7, [pc, #180]	; d4 <BIT_CODES+0x18>
+			MOV		R8, #BIT_CODES		// Address of BIT_CODES array
+  1c:	e3a080bc 	mov	r8, #188	; 0xbc
+			MOV		R2, #0				// R2 will be the counter
+  20:	e3a02000 	mov	r2, #0
+			MOV		R3, #1				// R3 will determine whether to count or not
+  24:	e3a03001 	mov	r3, #1
+
+00000028 <MAIN>:
+MAIN:		LDRB	R5, [R7, #0xC]		// Read Edgecapture register
+  28:	e5d7500c 	ldrb	r5, [r7, #12]
+			CMP		R5, #0
+  2c:	e3550000 	cmp	r5, #0
+			BEQ		DELAY				// If Edgecapture is not 0 the a key has been pressed
+  30:	0a000006 	beq	50 <DELAY>
+
+00000034 <WAIT>:
+WAIT:		LDR		R5, [R7]			// Poll KEYs to see if the KEY has been released
+  34:	e5975000 	ldr	r5, [r7]
+			CMP		R5, #0
+  38:	e3550000 	cmp	r5, #0
+			BNE		WAIT				// Wait for KEY to be released	
+  3c:	1afffffc 	bne	34 <WAIT>
+			MOV		R5, #0xF			// Reset Edgecapture
+  40:	e3a0500f 	mov	r5, #15
+			STR		R5, [R7, #0xC]
+  44:	e587500c 	str	r5, [r7, #12]
+			MOV		R4, #1
+  48:	e3a04001 	mov	r4, #1
+			SUB		R3, R4, R3			// Subtract R3 from 1 to invert it (1 <-> 0)
+  4c:	e0443003 	sub	r3, r4, r3
+
+00000050 <DELAY>:
+			
+DELAY:		LDR		R4, [R9, #0xC]		// Load timer interrupt flag
+  50:	e599400c 	ldr	r4, [r9, #12]
+			CMP		R4, #0				// Keep on delaying until interrupt flag is 1
+  54:	e3540000 	cmp	r4, #0
+			BEQ		DELAY
+  58:	0afffffc 	beq	50 <DELAY>
+			STR		R4, [R9, #0xC]		// Reset interrupt flag
+  5c:	e589400c 	str	r4, [r9, #12]
+			
+			CMP		R3, #1				// When R3 = 1, increment counter
+  60:	e3530001 	cmp	r3, #1
+			BNE		DISPLAY
+  64:	1a000003 	bne	78 <DISPLAY>
+			ADD		R2, #1
+  68:	e2822001 	add	r2, r2, #1
+			CMP		R2, #100			// Wrap around to 0 when R2 > 99
+  6c:	e3520064 	cmp	r2, #100	; 0x64
+			BNE		DISPLAY
+  70:	1a000000 	bne	78 <DISPLAY>
+			MOV		R2, #0
+  74:	e3a02000 	mov	r2, #0
+
+00000078 <DISPLAY>:
+			
+DISPLAY:	MOV		R0, R2				// Separate R2 into its digits
+  78:	e1a00002 	mov	r0, r2
+			BL		DIVIDE
+  7c:	eb000005 	bl	98 <DIVIDE>
+			LDRB	R0, [R8, +R0]		// Get pattern for ones digit
+  80:	e7d80000 	ldrb	r0, [r8, r0]
+			LDRB	R1, [R8, +R1]		// Get pattern for ones digit
+  84:	e7d81001 	ldrb	r1, [r8, r1]
+			LSL		R1, #8
+  88:	e1a01401 	lsl	r1, r1, #8
+			ORR		R0, R1				// Put pattern in the same reg as the tens digit
+  8c:	e1800001 	orr	r0, r0, r1
+			STR		R0, [R6]			// Display counter
+  90:	e5860000 	str	r0, [r6]
+			B		MAIN				// Program infinitely counts/loops
+  94:	eaffffe3 	b	28 <MAIN>
+
+00000098 <DIVIDE>:
+			
+
+/* Subroutine to perform the integer division R0 / 10.
+ * Returns quotient in R1 and remainder in R0
+ */
+DIVIDE:     PUSH	{R2,LR}
+  98:	e92d4004 	push	{r2, lr}
+			MOV     R2, #0
+  9c:	e3a02000 	mov	r2, #0
+
+000000a0 <CONT>:
+CONT:       CMP     R0, #10
+  a0:	e350000a 	cmp	r0, #10
+            BLT     DIV_END
+  a4:	ba000002 	blt	b4 <DIV_END>
+            SUB     R0, #10
+  a8:	e240000a 	sub	r0, r0, #10
+            ADD     R2, #1
+  ac:	e2822001 	add	r2, r2, #1
+            B       CONT
+  b0:	eafffffa 	b	a0 <CONT>
+
+000000b4 <DIV_END>:
+DIV_END:    MOV     R1, R2     		// quotient in R1 (remainder in R0)
+  b4:	e1a01002 	mov	r1, r2
+            POP     {R2,PC}
+  b8:	e8bd8004 	pop	{r2, pc}
+
+000000bc <BIT_CODES>:
+  bc:	4f5b063f 	.word	0x4f5b063f
+  c0:	077d6d66 	.word	0x077d6d66
+  c4:	0000677f 	.word	0x0000677f
+  c8:	fffec600 	.word	0xfffec600
+  cc:	02faf080 	.word	0x02faf080
+  d0:	ff200020 	.word	0xff200020
+  d4:	ff200050 	.word	0xff200050
