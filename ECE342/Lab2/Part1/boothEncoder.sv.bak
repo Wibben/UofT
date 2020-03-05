@@ -1,0 +1,10 @@
+module boothEncoder
+(
+	input i_Qi,
+	input i_Qi_min_1,
+	output logic o_plus,
+	output logic o_minus
+);
+	assign o_plus = ~i_Qi & i_Qi_min_1;
+	assign o_minus = i_Qi & ~i_Qi_min_1;
+endmodule

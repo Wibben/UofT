@@ -1,0 +1,87 @@
+// Control for UI module
+module control
+(
+	input clk,reset,
+	input i_setX,i_setY,i_setCol
+	input go,done,
+	output o_setX,o_setY,o_setCol,
+	output start,update
+);
+	enum int unsigned
+	{
+		S_INPUT
+		S_SET_X_WAIT,
+		S_SET_X,
+		S_SET_Y_WAIT,
+		S_SET_Y,
+		S_SET_COL_WAIT,
+		S_SET_COL,
+		S_GO_WAIT,
+		S_DRAW,
+		S_DRAW_WAIT,
+		S_UPDATE
+	} current_state,next_state;
+	
+	// State table
+	always_comb begin
+		case(current_state)
+			
+			S_INPUT: begin
+				if(i_setX) next_state = S_SET_X_WAIT;
+				else if(i_setY) next_state = S_SET_Y_WAIT;
+				else if(i_setCOl) next_state = S_SET_COL_WAIT;
+				else if(go) bext_state = S_GO_WAIT;
+				else next_state = S_INPUT;
+			end
+			// Wait states for button press to end
+			S_SET_X_WAIT:
+				next_state = i_setX ? S_SET_X_WAIT:S_SET_X;
+			S_SET_Y_WAIT:
+				next_state = i_setY ? S_SET_Y_WAIT:S_SET_Y;
+			S_SET_COL_WAIT:
+				next_state = i_setCol ? S_SET_COL_WAIT:S_SET_COL;
+			S_GO_WAIT:
+				next_state = go ? S_GO_WAIT:S_DRAW;
+			// States to set inputs
+			S_SET_X:
+				next_state = S_INPUT;
+			S_SET_Y:
+				next_state = S_INPUT;
+			S_SET_COL:
+				next_state = S_INPUT;
+			// Drawing states
+			S_DRAW: // Start drawing(LDA FSM)
+				next_state = S_DRAW_WAIT;
+			S_DRAW_WAIT: // Wait for drwaing to complete
+				next_state = done ? S_UPDATE:S_DRAW_WAIT;
+			S_UPDATE: // Update x0,y0 with x1,y1
+				next_state = S_INPUT;
+			default: next_state = S_INPUT; // On error go to input
+		endcase
+	end
+	
+	// Control signals
+	always_comb begin
+		o_setX = 1'b0; o_setY = 1'b0; o_setCol = 1'b0;
+		start = 1'b0; update = 1'b0;
+		
+		case(current_state)
+			S_SET_X:
+				o_setX = 1'b1;
+			S_SET_Y:
+				o_setY = 1'b1;
+			S_SET_COL:
+				o_setCol = 1'b1;
+			S_DRAW:
+				start = 1'b1;
+			S_UPDATE:
+				update = 1'b1;
+		endcase
+	end
+	
+	// State FFs
+	always_ff@(posedge clk) begin
+		if(reset) current_state <= S_INPUT;
+		else current_state <= next_state;
+	end
+endmodule

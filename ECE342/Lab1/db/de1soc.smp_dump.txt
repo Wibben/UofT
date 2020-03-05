@@ -1,0 +1,9 @@
+
+State Machine - |de1soc_top|game:game_inst|control:the_control|state
+Name state.S_GAMEOVER state.S_CHECK state.S_GUESS_WAIT state.S_GUESS state.S_STARTUP_WAIT state.S_STARTUP 
+state.S_STARTUP 0 0 0 0 0 0 
+state.S_STARTUP_WAIT 0 0 0 0 1 1 
+state.S_GUESS 0 0 0 1 0 1 
+state.S_GUESS_WAIT 0 0 1 0 0 1 
+state.S_CHECK 0 1 0 0 0 1 
+state.S_GAMEOVER 1 0 0 0 0 1 

@@ -1,0 +1,2076 @@
+|de1soc_top
+CLOCK_50 => y[0].CLK
+CLOCK_50 => y[1].CLK
+CLOCK_50 => y[2].CLK
+CLOCK_50 => y[3].CLK
+CLOCK_50 => y[4].CLK
+CLOCK_50 => y[5].CLK
+CLOCK_50 => y[6].CLK
+CLOCK_50 => y[7].CLK
+CLOCK_50 => x[0].CLK
+CLOCK_50 => x[1].CLK
+CLOCK_50 => x[2].CLK
+CLOCK_50 => x[3].CLK
+CLOCK_50 => x[4].CLK
+CLOCK_50 => x[5].CLK
+CLOCK_50 => x[6].CLK
+CLOCK_50 => x[7].CLK
+HEX0[0] <= hex_decoder:hexdec_0.segments
+HEX0[1] <= hex_decoder:hexdec_0.segments
+HEX0[2] <= hex_decoder:hexdec_0.segments
+HEX0[3] <= hex_decoder:hexdec_0.segments
+HEX0[4] <= hex_decoder:hexdec_0.segments
+HEX0[5] <= hex_decoder:hexdec_0.segments
+HEX0[6] <= hex_decoder:hexdec_0.segments
+HEX1[0] <= hex_decoder:hexdec_1.segments
+HEX1[1] <= hex_decoder:hexdec_1.segments
+HEX1[2] <= hex_decoder:hexdec_1.segments
+HEX1[3] <= hex_decoder:hexdec_1.segments
+HEX1[4] <= hex_decoder:hexdec_1.segments
+HEX1[5] <= hex_decoder:hexdec_1.segments
+HEX1[6] <= hex_decoder:hexdec_1.segments
+HEX2[0] <= hex_decoder:hexdec_2.segments
+HEX2[1] <= hex_decoder:hexdec_2.segments
+HEX2[2] <= hex_decoder:hexdec_2.segments
+HEX2[3] <= hex_decoder:hexdec_2.segments
+HEX2[4] <= hex_decoder:hexdec_2.segments
+HEX2[5] <= hex_decoder:hexdec_2.segments
+HEX2[6] <= hex_decoder:hexdec_2.segments
+HEX3[0] <= hex_decoder:hexdec_3.segments
+HEX3[1] <= hex_decoder:hexdec_3.segments
+HEX3[2] <= hex_decoder:hexdec_3.segments
+HEX3[3] <= hex_decoder:hexdec_3.segments
+HEX3[4] <= hex_decoder:hexdec_3.segments
+HEX3[5] <= hex_decoder:hexdec_3.segments
+HEX3[6] <= hex_decoder:hexdec_3.segments
+HEX4[0] <= <VCC>
+HEX4[1] <= <VCC>
+HEX4[2] <= <VCC>
+HEX4[3] <= <VCC>
+HEX4[4] <= <VCC>
+HEX4[5] <= <VCC>
+HEX4[6] <= <VCC>
+HEX5[0] <= <VCC>
+HEX5[1] <= <VCC>
+HEX5[2] <= <VCC>
+HEX5[3] <= <VCC>
+HEX5[4] <= <VCC>
+HEX5[5] <= <VCC>
+HEX5[6] <= <VCC>
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+SW[0] => x.DATAB
+SW[0] => y.DATAA
+SW[1] => x.DATAB
+SW[1] => y.DATAA
+SW[2] => x.DATAB
+SW[2] => y.DATAA
+SW[3] => x.DATAB
+SW[3] => y.DATAA
+SW[4] => x.DATAB
+SW[4] => y.DATAA
+SW[5] => x.DATAB
+SW[5] => y.DATAA
+SW[6] => x.DATAB
+SW[6] => y.DATAA
+SW[7] => x.DATAB
+SW[7] => y.DATAA
+SW[8] => ~NO_FANOUT~
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+VGA_B[0] <= <GND>
+VGA_B[1] <= <GND>
+VGA_B[2] <= <GND>
+VGA_B[3] <= <GND>
+VGA_B[4] <= <GND>
+VGA_B[5] <= <GND>
+VGA_B[6] <= <GND>
+VGA_B[7] <= <GND>
+VGA_BLANK_N <= <GND>
+VGA_CLK <= <GND>
+VGA_G[0] <= <GND>
+VGA_G[1] <= <GND>
+VGA_G[2] <= <GND>
+VGA_G[3] <= <GND>
+VGA_G[4] <= <GND>
+VGA_G[5] <= <GND>
+VGA_G[6] <= <GND>
+VGA_G[7] <= <GND>
+VGA_HS <= <GND>
+VGA_R[0] <= <GND>
+VGA_R[1] <= <GND>
+VGA_R[2] <= <GND>
+VGA_R[3] <= <GND>
+VGA_R[4] <= <GND>
+VGA_R[5] <= <GND>
+VGA_R[6] <= <GND>
+VGA_R[7] <= <GND>
+VGA_SYNC_N <= <GND>
+VGA_VS <= <GND>
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8
+a[0] => q[1].IN2
+a[1] => q[2].IN2
+a[2] => q[3].IN2
+a[3] => q[4].IN2
+a[4] => q[5].IN2
+a[5] => q[6].IN2
+a[6] => q[7].IN2
+a[7] => q[8].IN1
+b[0] => b[0].IN8
+b[1] => b[1].IN8
+b[2] => b[2].IN8
+b[3] => b[3].IN8
+b[4] => b[4].IN8
+b[5] => b[5].IN8
+b[6] => b[6].IN8
+b[7] => b[7].IN8
+product[0] <= multiCell:multiplierRows[0].multiplierCells[0].multi_inst.s
+product[1] <= multiCell:multiplierRows[1].multiplierCells[0].multi_inst.s
+product[2] <= multiCell:multiplierRows[2].multiplierCells[0].multi_inst.s
+product[3] <= multiCell:multiplierRows[3].multiplierCells[0].multi_inst.s
+product[4] <= multiCell:multiplierRows[4].multiplierCells[0].multi_inst.s
+product[5] <= multiCell:multiplierRows[5].multiplierCells[0].multi_inst.s
+product[6] <= multiCell:multiplierRows[6].multiplierCells[0].multi_inst.s
+product[7] <= multiCell:multiplierRows[7].multiplierCells[0].multi_inst.s
+product[8] <= multiCell:multiplierRows[7].multiplierCells[1].multi_inst.s
+product[9] <= multiCell:multiplierRows[7].multiplierCells[2].multi_inst.s
+product[10] <= multiCell:multiplierRows[7].multiplierCells[3].multi_inst.s
+product[11] <= multiCell:multiplierRows[7].multiplierCells[4].multi_inst.s
+product[12] <= multiCell:multiplierRows[7].multiplierCells[5].multi_inst.s
+product[13] <= multiCell:multiplierRows[7].multiplierCells[6].multi_inst.s
+product[14] <= multiCell:multiplierRows[7].multiplierCells[7].multi_inst.s
+product[15] <= fa:multiplierRows[7].adder_inst.s
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|boothEncoder:multiplierRows[0].booth_inst
+Qi => minus.IN0
+Qi => plus.IN0
+Qi_min_1 => plus.IN1
+Qi_min_1 => minus.IN1
+plus <= plus.DB_MAX_OUTPUT_PORT_TYPE
+minus <= minus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[0].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[0].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[1].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[1].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[2].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[2].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[3].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[3].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[4].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[4].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[5].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[5].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[6].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[6].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[7].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[0].multiplierCells[7].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|fa:multiplierRows[0].adder_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|boothEncoder:multiplierRows[1].booth_inst
+Qi => minus.IN0
+Qi => plus.IN0
+Qi_min_1 => plus.IN1
+Qi_min_1 => minus.IN1
+plus <= plus.DB_MAX_OUTPUT_PORT_TYPE
+minus <= minus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[0].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[0].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[1].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[1].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[2].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[2].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[3].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[3].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[4].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[4].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[5].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[5].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[6].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[6].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[7].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[1].multiplierCells[7].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|fa:multiplierRows[1].adder_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|boothEncoder:multiplierRows[2].booth_inst
+Qi => minus.IN0
+Qi => plus.IN0
+Qi_min_1 => plus.IN1
+Qi_min_1 => minus.IN1
+plus <= plus.DB_MAX_OUTPUT_PORT_TYPE
+minus <= minus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[0].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[0].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[1].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[1].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[2].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[2].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[3].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[3].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[4].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[4].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[5].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[5].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[6].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[6].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[7].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[2].multiplierCells[7].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|fa:multiplierRows[2].adder_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|boothEncoder:multiplierRows[3].booth_inst
+Qi => minus.IN0
+Qi => plus.IN0
+Qi_min_1 => plus.IN1
+Qi_min_1 => minus.IN1
+plus <= plus.DB_MAX_OUTPUT_PORT_TYPE
+minus <= minus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[0].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[0].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[1].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[1].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[2].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[2].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[3].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[3].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[4].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[4].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[5].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[5].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[6].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[6].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[7].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[3].multiplierCells[7].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|fa:multiplierRows[3].adder_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|boothEncoder:multiplierRows[4].booth_inst
+Qi => minus.IN0
+Qi => plus.IN0
+Qi_min_1 => plus.IN1
+Qi_min_1 => minus.IN1
+plus <= plus.DB_MAX_OUTPUT_PORT_TYPE
+minus <= minus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[0].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[0].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[1].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[1].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[2].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[2].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[3].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[3].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[4].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[4].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[5].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[5].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[6].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[6].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[7].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[4].multiplierCells[7].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|fa:multiplierRows[4].adder_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|boothEncoder:multiplierRows[5].booth_inst
+Qi => minus.IN0
+Qi => plus.IN0
+Qi_min_1 => plus.IN1
+Qi_min_1 => minus.IN1
+plus <= plus.DB_MAX_OUTPUT_PORT_TYPE
+minus <= minus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[0].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[0].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[1].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[1].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[2].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[2].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[3].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[3].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[4].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[4].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[5].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[5].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[6].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[6].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[7].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[5].multiplierCells[7].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|fa:multiplierRows[5].adder_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|boothEncoder:multiplierRows[6].booth_inst
+Qi => minus.IN0
+Qi => plus.IN0
+Qi_min_1 => plus.IN1
+Qi_min_1 => minus.IN1
+plus <= plus.DB_MAX_OUTPUT_PORT_TYPE
+minus <= minus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[0].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[0].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[1].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[1].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[2].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[2].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[3].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[3].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[4].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[4].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[5].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[5].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[6].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[6].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[7].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[6].multiplierCells[7].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|fa:multiplierRows[6].adder_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|boothEncoder:multiplierRows[7].booth_inst
+Qi => minus.IN0
+Qi => plus.IN0
+Qi_min_1 => plus.IN1
+Qi_min_1 => minus.IN1
+plus <= plus.DB_MAX_OUTPUT_PORT_TYPE
+minus <= minus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[0].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[0].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[1].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[1].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[2].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[2].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[3].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[3].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[4].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[4].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[5].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[5].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[6].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[6].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[7].multi_inst
+plus => sign_ext.IN0
+minus => sign_ext.IN0
+a => a.IN1
+b => sign_ext.IN1
+b => sign_ext.IN1
+cin => cin.IN1
+s <= fa:full_adder.s
+cout <= fa:full_adder.cout
+sign_ext <= sign_ext.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|multiCell:multiplierRows[7].multiplierCells[7].multi_inst|fa:full_adder
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|boothMultipliernxn:boothMulti8x8|fa:multiplierRows[7].adder_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:hexdec_0
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:hexdec_1
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:hexdec_2
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:hexdec_3
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

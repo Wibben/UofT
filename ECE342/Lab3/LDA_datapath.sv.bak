@@ -1,0 +1,5 @@
+// Datapath for LDA module
+module LDA_datapath
+();
+
+endmodule

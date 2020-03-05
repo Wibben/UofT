@@ -1,0 +1,151 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/ECE342/Lab2/Part3
+vCLA
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1580072827
+!i10b 1
+!s100 iSjQjeDQUbclNUfoTASZ`0
+I@@PNDVWBTIOX:R01dVH4?1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 CLA_sv_unit
+S1
+R0
+w1579918485
+8CLA.sv
+FCLA.sv
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1580072826.000000
+Z6 !s107 wallaceTree8x8.sv|tbWallaceTree8x8.sv|hex_decoder.sv|fa.sv|de1soc_top.sv|CLA.sv|
+Z7 !s90 -reportprogress|300|CLA.sv|de1soc_top.sv|fa.sv|hex_decoder.sv|tbWallaceTree8x8.sv|wallaceTree8x8.sv|
+!i113 1
+Z8 tCvgOpt 0
+n@c@l@a
+vde1soc_top
+R1
+R2
+!i10b 1
+!s100 QV26OS8AIPQfJ3FT95oaA3
+I=Xk;R?eej`RUAC4zn89=<3
+R3
+!s105 de1soc_top_sv_unit
+S1
+R0
+Z9 w1576183830
+8de1soc_top.sv
+Fde1soc_top.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vfa
+R1
+R2
+!i10b 1
+!s100 dl`O:3QO3nQHJi6;ckc<33
+IK3>DhYT`?nOFHJG:L^aLL3
+R3
+!s105 fa_sv_unit
+S1
+R0
+w1579918464
+8fa.sv
+Ffa.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vhex_decoder
+R1
+R2
+!i10b 1
+!s100 G_2`OH?C3N_@:BW]WmV<j2
+Im5TV__U;0naQgYnoizD2D0
+R3
+!s105 hex_decoder_sv_unit
+S1
+R0
+R9
+8hex_decoder.sv
+Fhex_decoder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vtbWallaceTree8x8
+R1
+R2
+!i10b 1
+!s100 19=H5G6LfZ]mEKFo8H_@@3
+Ig2El9W2mD5l^>c]`ge1a21
+R3
+!s105 tbWallaceTree8x8_sv_unit
+S1
+R0
+w1580068461
+8tbWallaceTree8x8.sv
+FtbWallaceTree8x8.sv
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+ntb@wallace@tree8x8
+vwallaceTree8x8
+R1
+R2
+!i10b 1
+!s100 9?Xfh>9alA?jg;8NC6fId0
+IFK_i;SNTVWW0acC7z1N8Z3
+R3
+!s105 wallaceTree8x8_sv_unit
+S1
+R0
+w1580072797
+8wallaceTree8x8.sv
+FwallaceTree8x8.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+nwallace@tree8x8

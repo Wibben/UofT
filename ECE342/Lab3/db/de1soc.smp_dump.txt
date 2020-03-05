@@ -1,0 +1,16 @@
+
+State Machine - |de1soc_top|LDA:lda|LDA_control:LDA_ctrl|current_state
+Name current_state.S_UPDATE current_state.S_PLOT current_state.S_SETUP current_state.S_IDLE current_state.S_DONE 
+current_state.S_IDLE 0 0 0 0 0 
+current_state.S_SETUP 0 0 1 1 0 
+current_state.S_PLOT 0 1 0 1 0 
+current_state.S_UPDATE 1 0 0 1 0 
+current_state.S_DONE 0 0 0 1 1 
+
+State Machine - |de1soc_top|UI:ui|UI_control:UI_ctrl|current_state
+Name current_state.S_DRAW_WAIT current_state.S_DRAW current_state.S_GO_WAIT current_state.S_INPUT current_state.S_UPDATE 
+current_state.S_INPUT 0 0 0 0 0 
+current_state.S_GO_WAIT 0 0 1 1 0 
+current_state.S_DRAW 0 1 0 1 0 
+current_state.S_DRAW_WAIT 1 0 0 1 0 
+current_state.S_UPDATE 0 0 0 1 1 

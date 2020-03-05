@@ -1,0 +1,26 @@
+`timescale 1ns/1ns
+
+// Testbench for 8x8 Booth multiplier
+// Runs through all possible combinations from -128 to 127
+module tbBooth8x8();
+	logic [7:0] dut_a,dut_b;
+	logic [15:0] dut_product;
+	
+	// Instantiate an 8x8 booth multiplier
+	boothMultipliernxn DUT (.n(8))
+	(
+		.a(dut_a),.b(dut_b),
+		.product(dut_product)
+	);
+	
+	// Run throuhg all inputs and test that the product is correct
+	initial begin
+		for(integer a=-8'd128; a<8'd128; a++) begin
+			for(integer b=-8'd127; b<8'd128; b++) begin
+				dut_a = a[7:0];
+				dut_b = b[7:0];
+			end
+		end
+	end
+	
+endmodule

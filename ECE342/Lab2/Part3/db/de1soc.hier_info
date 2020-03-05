@@ -1,0 +1,1161 @@
+|de1soc_top
+CLOCK_50 => y[0].CLK
+CLOCK_50 => y[1].CLK
+CLOCK_50 => y[2].CLK
+CLOCK_50 => y[3].CLK
+CLOCK_50 => y[4].CLK
+CLOCK_50 => y[5].CLK
+CLOCK_50 => y[6].CLK
+CLOCK_50 => y[7].CLK
+CLOCK_50 => x[0].CLK
+CLOCK_50 => x[1].CLK
+CLOCK_50 => x[2].CLK
+CLOCK_50 => x[3].CLK
+CLOCK_50 => x[4].CLK
+CLOCK_50 => x[5].CLK
+CLOCK_50 => x[6].CLK
+CLOCK_50 => x[7].CLK
+HEX0[0] << hex_decoder:hexdec_0.segments
+HEX0[1] << hex_decoder:hexdec_0.segments
+HEX0[2] << hex_decoder:hexdec_0.segments
+HEX0[3] << hex_decoder:hexdec_0.segments
+HEX0[4] << hex_decoder:hexdec_0.segments
+HEX0[5] << hex_decoder:hexdec_0.segments
+HEX0[6] << hex_decoder:hexdec_0.segments
+HEX1[0] << hex_decoder:hexdec_1.segments
+HEX1[1] << hex_decoder:hexdec_1.segments
+HEX1[2] << hex_decoder:hexdec_1.segments
+HEX1[3] << hex_decoder:hexdec_1.segments
+HEX1[4] << hex_decoder:hexdec_1.segments
+HEX1[5] << hex_decoder:hexdec_1.segments
+HEX1[6] << hex_decoder:hexdec_1.segments
+HEX2[0] << hex_decoder:hexdec_2.segments
+HEX2[1] << hex_decoder:hexdec_2.segments
+HEX2[2] << hex_decoder:hexdec_2.segments
+HEX2[3] << hex_decoder:hexdec_2.segments
+HEX2[4] << hex_decoder:hexdec_2.segments
+HEX2[5] << hex_decoder:hexdec_2.segments
+HEX2[6] << hex_decoder:hexdec_2.segments
+HEX3[0] << hex_decoder:hexdec_3.segments
+HEX3[1] << hex_decoder:hexdec_3.segments
+HEX3[2] << hex_decoder:hexdec_3.segments
+HEX3[3] << hex_decoder:hexdec_3.segments
+HEX3[4] << hex_decoder:hexdec_3.segments
+HEX3[5] << hex_decoder:hexdec_3.segments
+HEX3[6] << hex_decoder:hexdec_3.segments
+HEX4[0] << <VCC>
+HEX4[1] << <VCC>
+HEX4[2] << <VCC>
+HEX4[3] << <VCC>
+HEX4[4] << <VCC>
+HEX4[5] << <VCC>
+HEX4[6] << <VCC>
+HEX5[0] << <VCC>
+HEX5[1] << <VCC>
+HEX5[2] << <VCC>
+HEX5[3] << <VCC>
+HEX5[4] << <VCC>
+HEX5[5] << <VCC>
+HEX5[6] << <VCC>
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+LEDR[0] << <GND>
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+SW[0] => x.DATAB
+SW[0] => y.DATAA
+SW[1] => x.DATAB
+SW[1] => y.DATAA
+SW[2] => x.DATAB
+SW[2] => y.DATAA
+SW[3] => x.DATAB
+SW[3] => y.DATAA
+SW[4] => x.DATAB
+SW[4] => y.DATAA
+SW[5] => x.DATAB
+SW[5] => y.DATAA
+SW[6] => x.DATAB
+SW[6] => y.DATAA
+SW[7] => x.DATAB
+SW[7] => y.DATAA
+SW[8] => ~NO_FANOUT~
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => x.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+SW[9] => y.OUTPUTSELECT
+VGA_B[0] << <GND>
+VGA_B[1] << <GND>
+VGA_B[2] << <GND>
+VGA_B[3] << <GND>
+VGA_B[4] << <GND>
+VGA_B[5] << <GND>
+VGA_B[6] << <GND>
+VGA_B[7] << <GND>
+VGA_BLANK_N << <GND>
+VGA_CLK << <GND>
+VGA_G[0] << <GND>
+VGA_G[1] << <GND>
+VGA_G[2] << <GND>
+VGA_G[3] << <GND>
+VGA_G[4] << <GND>
+VGA_G[5] << <GND>
+VGA_G[6] << <GND>
+VGA_G[7] << <GND>
+VGA_HS << <GND>
+VGA_R[0] << <GND>
+VGA_R[1] << <GND>
+VGA_R[2] << <GND>
+VGA_R[3] << <GND>
+VGA_R[4] << <GND>
+VGA_R[5] << <GND>
+VGA_R[6] << <GND>
+VGA_R[7] << <GND>
+VGA_SYNC_N << <GND>
+VGA_VS << <GND>
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier
+a[0] => partial.IN0
+a[0] => partial.IN0
+a[0] => partial.IN0
+a[0] => partial.IN0
+a[0] => partial.IN0
+a[0] => partial.IN0
+a[0] => partial.IN0
+a[0] => partial.IN0
+a[1] => partial.IN0
+a[1] => partial.IN0
+a[1] => partial.IN0
+a[1] => partial.IN0
+a[1] => partial.IN0
+a[1] => partial.IN0
+a[1] => partial.IN0
+a[1] => partial.IN0
+a[2] => partial.IN0
+a[2] => partial.IN0
+a[2] => partial.IN0
+a[2] => partial.IN0
+a[2] => partial.IN0
+a[2] => partial.IN0
+a[2] => partial.IN0
+a[2] => partial.IN0
+a[3] => partial.IN0
+a[3] => partial.IN0
+a[3] => partial.IN0
+a[3] => partial.IN0
+a[3] => partial.IN0
+a[3] => partial.IN0
+a[3] => partial.IN0
+a[3] => partial.IN0
+a[4] => partial.IN0
+a[4] => partial.IN0
+a[4] => partial.IN0
+a[4] => partial.IN0
+a[4] => partial.IN0
+a[4] => partial.IN0
+a[4] => partial.IN0
+a[4] => partial.IN0
+a[5] => partial.IN0
+a[5] => partial.IN0
+a[5] => partial.IN0
+a[5] => partial.IN0
+a[5] => partial.IN0
+a[5] => partial.IN0
+a[5] => partial.IN0
+a[5] => partial.IN0
+a[6] => partial.IN0
+a[6] => partial.IN0
+a[6] => partial.IN0
+a[6] => partial.IN0
+a[6] => partial.IN0
+a[6] => partial.IN0
+a[6] => partial.IN0
+a[6] => partial.IN0
+a[7] => partial.IN0
+a[7] => partial.IN0
+a[7] => partial.IN0
+a[7] => partial.IN0
+a[7] => partial.IN0
+a[7] => partial.IN0
+a[7] => partial.IN0
+a[7] => partial.IN0
+b[0] => partial.IN1
+b[0] => partial.IN1
+b[0] => partial.IN1
+b[0] => partial.IN1
+b[0] => partial.IN1
+b[0] => partial.IN1
+b[0] => partial.IN1
+b[0] => partial.IN1
+b[1] => partial.IN1
+b[1] => partial.IN1
+b[1] => partial.IN1
+b[1] => partial.IN1
+b[1] => partial.IN1
+b[1] => partial.IN1
+b[1] => partial.IN1
+b[1] => partial.IN1
+b[2] => partial.IN1
+b[2] => partial.IN1
+b[2] => partial.IN1
+b[2] => partial.IN1
+b[2] => partial.IN1
+b[2] => partial.IN1
+b[2] => partial.IN1
+b[2] => partial.IN1
+b[3] => partial.IN1
+b[3] => partial.IN1
+b[3] => partial.IN1
+b[3] => partial.IN1
+b[3] => partial.IN1
+b[3] => partial.IN1
+b[3] => partial.IN1
+b[3] => partial.IN1
+b[4] => partial.IN1
+b[4] => partial.IN1
+b[4] => partial.IN1
+b[4] => partial.IN1
+b[4] => partial.IN1
+b[4] => partial.IN1
+b[4] => partial.IN1
+b[4] => partial.IN1
+b[5] => partial.IN1
+b[5] => partial.IN1
+b[5] => partial.IN1
+b[5] => partial.IN1
+b[5] => partial.IN1
+b[5] => partial.IN1
+b[5] => partial.IN1
+b[5] => partial.IN1
+b[6] => partial.IN1
+b[6] => partial.IN1
+b[6] => partial.IN1
+b[6] => partial.IN1
+b[6] => partial.IN1
+b[6] => partial.IN1
+b[6] => partial.IN1
+b[6] => partial.IN1
+b[7] => partial.IN1
+b[7] => partial.IN1
+b[7] => partial.IN1
+b[7] => partial.IN1
+b[7] => partial.IN1
+b[7] => partial.IN1
+b[7] => partial.IN1
+b[7] => partial.IN1
+product[0] <= partial.DB_MAX_OUTPUT_PORT_TYPE
+product[1] <= fa:level1FAs[0].L1_fa_1_inst.s
+product[2] <= fa:level2FAs[0].L2_fa_1_inst.s
+product[3] <= fa:level3FAs[0].L3_fa_inst.s
+product[4] <= fa:level4FAs[0].L4_fa_inst.s
+product[5] <= CLA:CLA_inst.s
+product[6] <= CLA:CLA_inst.s
+product[7] <= CLA:CLA_inst.s
+product[8] <= CLA:CLA_inst.s
+product[9] <= CLA:CLA_inst.s
+product[10] <= CLA:CLA_inst.s
+product[11] <= CLA:CLA_inst.s
+product[12] <= CLA:CLA_inst.s
+product[13] <= CLA:CLA_inst.s
+product[14] <= CLA:CLA_inst.s
+product[15] <= CLA:CLA_inst.s
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[0].L1_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[0].L1_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[1].L1_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[1].L1_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[2].L1_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[2].L1_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[3].L1_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[3].L1_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[4].L1_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[4].L1_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[5].L1_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[5].L1_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[6].L1_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[6].L1_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[7].L1_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level1FAs[7].L1_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[0].L2_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[0].L2_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[1].L2_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[1].L2_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[2].L2_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[2].L2_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[3].L2_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[3].L2_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[4].L2_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[4].L2_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[5].L2_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[5].L2_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[6].L2_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[6].L2_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[7].L2_fa_1_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level2FAs[7].L2_fa_2_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[0].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[1].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[2].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[3].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[4].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[5].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[6].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[7].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[8].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level3FAs[9].L3_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[0].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[1].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[2].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[3].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[4].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[5].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[6].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[7].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[8].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[9].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|fa:level4FAs[10].L4_fa_inst
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|wallaceTree8x8:wallaceTreeMultiplier|CLA:CLA_inst
+a[0] => carryLookAhead[0].g.IN0
+a[0] => s.IN0
+a[1] => carryLookAhead[1].g.IN0
+a[1] => carryLookAhead[1].p.IN0
+a[1] => s.IN0
+a[2] => carryLookAhead[2].g.IN0
+a[2] => carryLookAhead[2].p.IN0
+a[2] => s.IN0
+a[3] => carryLookAhead[3].g.IN0
+a[3] => carryLookAhead[3].p.IN0
+a[3] => s.IN0
+a[4] => carryLookAhead[4].g.IN0
+a[4] => carryLookAhead[4].p.IN0
+a[4] => s.IN0
+a[5] => carryLookAhead[5].g.IN0
+a[5] => carryLookAhead[5].p.IN0
+a[5] => s.IN0
+a[6] => carryLookAhead[6].g.IN0
+a[6] => carryLookAhead[6].p.IN0
+a[6] => s.IN0
+a[7] => carryLookAhead[7].g.IN0
+a[7] => carryLookAhead[7].p.IN0
+a[7] => s.IN0
+a[8] => carryLookAhead[8].g.IN0
+a[8] => carryLookAhead[8].p.IN0
+a[8] => s.IN0
+a[9] => carryLookAhead[9].g.IN0
+a[9] => carryLookAhead[9].p.IN0
+a[9] => s.IN0
+a[10] => carryLookAhead[10].g.IN0
+a[10] => carryLookAhead[10].p.IN0
+a[10] => s.IN0
+b[0] => carryLookAhead[0].g.IN1
+b[0] => s.IN1
+b[1] => carryLookAhead[1].g.IN1
+b[1] => carryLookAhead[1].p.IN1
+b[1] => s.IN1
+b[2] => carryLookAhead[2].g.IN1
+b[2] => carryLookAhead[2].p.IN1
+b[2] => s.IN1
+b[3] => carryLookAhead[3].g.IN1
+b[3] => carryLookAhead[3].p.IN1
+b[3] => s.IN1
+b[4] => carryLookAhead[4].g.IN1
+b[4] => carryLookAhead[4].p.IN1
+b[4] => s.IN1
+b[5] => carryLookAhead[5].g.IN1
+b[5] => carryLookAhead[5].p.IN1
+b[5] => s.IN1
+b[6] => carryLookAhead[6].g.IN1
+b[6] => carryLookAhead[6].p.IN1
+b[6] => s.IN1
+b[7] => carryLookAhead[7].g.IN1
+b[7] => carryLookAhead[7].p.IN1
+b[7] => s.IN1
+b[8] => carryLookAhead[8].g.IN1
+b[8] => carryLookAhead[8].p.IN1
+b[8] => s.IN1
+b[9] => carryLookAhead[9].g.IN1
+b[9] => carryLookAhead[9].p.IN1
+b[9] => s.IN1
+b[10] => carryLookAhead[10].g.IN1
+b[10] => carryLookAhead[10].p.IN1
+b[10] => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[7] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[8] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[9] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[10] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[11] <= cin.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:hexdec_0
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:hexdec_1
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:hexdec_2
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de1soc_top|hex_decoder:hexdec_3
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,5 @@
+// Control for LDA module
+module LDA_control
+();
+
+endmodule

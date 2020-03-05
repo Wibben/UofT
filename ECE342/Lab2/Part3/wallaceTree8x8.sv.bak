@@ -1,0 +1,33 @@
+// 8x8 Wallace tree multiplier
+// Writing only an 8 bit one because no idea how to generalize
+module wallaceTree8x8
+(
+	input[7:0] a,b,
+	output[15:0] product
+);
+	// Generate Wallace tree multiplier through 4 levels
+	logic[7:0] partial[7:0];
+	logic[15:0] L1[5:0];
+	logic[15:0] L2[3:0];
+	logic[15:0] L3[2:0];
+	logic[15:0] L4[1:0];
+	
+	genvar i,j;
+	generate
+		// Generate partial products
+		for(i=0; i<8; i++) begin : argumentA
+			for(j=0; j<8; j++) begin : argumentB
+				
+			end
+		end
+		
+		// Level 1
+		
+		// Level 2
+		
+		// Level 3
+		
+		// Level 4
+	endgenerate
+	
+endmodule

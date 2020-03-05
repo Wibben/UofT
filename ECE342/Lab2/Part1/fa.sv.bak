@@ -1,0 +1,10 @@
+// Full adder
+module fa
+(
+	input a,b,cin,
+	
+	output logic s,cout
+);
+	assign s = a ^ b ^ cin;
+	assign cout = x&y | x&cin | y&cin;
+endmodule

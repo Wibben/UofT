@@ -1,0 +1,23 @@
+
+State Machine - |de1soc_top|nios_system:Nios2|LDA_peripheral:lda_peripheral_0|LDA:lda|LDA_control:LDA_ctrl|current_state
+Name current_state.S_UPDATE current_state.S_PLOT current_state.S_SETUP current_state.S_IDLE current_state.S_DONE 
+current_state.S_IDLE 0 0 0 0 0 
+current_state.S_SETUP 0 0 1 1 0 
+current_state.S_PLOT 0 1 0 1 0 
+current_state.S_UPDATE 1 0 0 1 0 
+current_state.S_DONE 0 0 0 1 1 
+
+State Machine - |de1soc_top|nios_system:Nios2|LDA_peripheral:lda_peripheral_0|ASC:asc|ASC_control:ASC_ctrl|current_state
+Name current_state.S_IDLE current_state.S_DRAW_WAIT current_state.S_DRAW 
+current_state.S_IDLE 0 0 0 
+current_state.S_DRAW 1 0 1 
+current_state.S_DRAW_WAIT 1 1 0 
+
+State Machine - |de1soc_top|nios_system:Nios2|nios_system_nios2_processor:nios2_processor|nios_system_nios2_processor_nios2_oci:the_nios_system_nios2_processor_nios2_oci|nios_system_nios2_processor_jtag_debug_module_wrapper:the_nios_system_nios2_processor_jtag_debug_module_wrapper|nios_system_nios2_processor_jtag_debug_module_tck:the_nios_system_nios2_processor_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

@@ -1,0 +1,8 @@
+// Multiplier cell
+module multiCell
+(
+	input plus,minus,
+	input s,m, // s - result from adder or 
+	
+);
+endmodule
