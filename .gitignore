@@ -12,12 +12,14 @@
 /Skule Nite/
 *.m~
 Important Passwords.txt
-/ECE297/
+/ECE297/*.docx
 /ECE241/
 !/ECE241/Lab*/*/*.v
 !/ECE241/Lab*/*/*.do
 !/ECE241/Lab*/*/*.qsf
 !/ECE241/Lab*/*/*.qpf
 !/ECE241/Lab*/*/*.pdf
-
+/Jr. Deep/
+/ECE302/
+/ECE345/
 
