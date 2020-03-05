@@ -1,0 +1,8 @@
+Wed Nov 20 11:00:22 EST 2019
+Running cachesize experiment. Output goes to plot-cachesize.out
+server: ../nptl/pthread_mutex_lock.c:81: __pthread_mutex_lock: Assertion `mutex->__data.__owner == 0' failed.
+Rio_readlineb error: Connection reset by peer
+./run-one-experiment: line 57:  7138 Aborted                 ./server $PORT $NR_THREADS $MAX_REQUESTS $CACHE_SIZE > server.log
+error: run 2: ./client -t 127.0.0.1 16934 100 10 fileset_dir.idx
+forcing server shutdown
+Cachesize experiment done.
