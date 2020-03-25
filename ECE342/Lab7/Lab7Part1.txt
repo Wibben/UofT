@@ -1,0 +1,17 @@
+Bing Li
+
+When I was doing the pipelining, I was trying to think of what needs to be passed onto the next
+stage and what exactly marks the end of a stage. For this lab, by using the lab manual as a quide,
+I have decided on the following stages:
+Fetch 
+	- Just sends PC to memory and increments PC
+	- Control does pretty much nothing
+Read 
+	- Gets the instruction requested from the last cycle and splits it into opcode,Rx,Ry,Rx_data,Ry_data,imm8,imm11
+	- Control still does pretty much nothing
+Execute 
+	- Select ALU input A and B and pass it through the ALU, passes through opcode,Rx,Ry,Rx_data,Ry_data for future
+	- Control decides ALU inputs to select or to read from memory, also updates N and Z flags at the same time
+Write
+	- Write results to registers or memory
+	- Control decides whether registers/pc/memory is being loaded

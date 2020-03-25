@@ -1,0 +1,125 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7
+vcpu
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1585155041
+!i10b 1
+!s100 7PPcjiE7EQ[9FlA6D58Yh0
+IfUAHceekOBD=^]S?Ki4ZH3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 cpu_sv_unit
+S1
+R0
+w1585101053
+8cpu.sv
+Fcpu.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1585155041.000000
+Z6 !s107 tb.sv|harness.sv|cpu_datapath.sv|cpu_control.sv|cpu.sv|
+Z7 !s90 -reportprogress|300|cpu.sv|cpu_control.sv|cpu_datapath.sv|harness.sv|tb.sv|
+!i113 1
+Z8 tCvgOpt 0
+vcpu_control
+R1
+R2
+!i10b 1
+!s100 82Anic:j?Ybz`z==51ce]2
+I>Y64JW7a8A5CjEhB]^T?02
+R3
+!s105 cpu_control_sv_unit
+S1
+R0
+w1585102584
+8cpu_control.sv
+Fcpu_control.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vcpu_datapath
+R1
+R2
+!i10b 1
+!s100 e06KI?Di9DW=`EHW7X3bl0
+IG1H=zWB[kI58`5GoUijF32
+R3
+!s105 cpu_datapath_sv_unit
+S1
+R0
+w1585102828
+8cpu_datapath.sv
+Fcpu_datapath.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vharness
+R1
+R2
+!i10b 1
+!s100 B0J2_`[9oE?c9DaDTB3QR2
+Ij54H_HYfdk<?cBF;1I86Q1
+R3
+!s105 harness_sv_unit
+S1
+R0
+w1585080719
+8harness.sv
+Fharness.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vtb
+R1
+R2
+!i10b 1
+!s100 0KP3V[F?9BY6^khk;`Uh@2
+IS0KSPIi7IEE?4gmO2Qm<61
+R3
+!s105 tb_sv_unit
+S1
+R0
+w1585155035
+8tb.sv
+Ftb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8

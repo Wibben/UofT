@@ -1,0 +1,23 @@
+Bing Li - Part IV
+
+For this part, first I decided to condense the read and execute steps into a single step,
+I did this as I noticed that while the differentiation between fetch and read was
+necessary (you need a cycle for the next instruction to be returned), the read step
+just split the instruction into individial parts for the ALU in the execute step. 
+This splitting can instead be done in the same step that the ALU does its calculation, 
+making the pipeline one stage less. 
+
+I thought of this idea when I was thinking of how to reduce the instructions sacrificed
+for the jump instructions. When there were 4 stages, the middle 2 became obselete when 
+the path was taken, but when there are only 3 stages, only one stage would be come obselete,
+which would improve performance.
+
+The next thing I did was to reduce the stages required for jump instructions. Since now the
+pipeline is only 2 stages, by the time the read stage gets to the jump instruction, the n and z
+values should have already been calculated and put into their registers by the previous
+instruction (n and z are set in the read stage), so there is no need to wait until the
+write stage to change the PC.
+
+At this point my IPC is now 1, and I realised that I don't need any of my valid signals anymore.
+So I took them out in hopes of increasing my Fmax, along with cleaning up my code to remove other
+unneeded signals. Through doing this my Fmax went up by a little bit (from ~114MHz to ~122MHz).
