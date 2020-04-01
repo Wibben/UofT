@@ -13,7 +13,7 @@ the path was taken, but when there are only 3 stages, only one stage would be co
 which would improve performance.
 
 The next thing I did was to reduce the stages required for jump instructions. Since now the
-pipeline is only 2 stages, by the time the read stage gets to the jump instruction, the n and z
+pipeline is only 3 stages, by the time the read stage gets to the jump instruction, the n and z
 values should have already been calculated and put into their registers by the previous
 instruction (n and z are set in the read stage), so there is no need to wait until the
 write stage to change the PC.

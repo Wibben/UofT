@@ -23,7 +23,7 @@ module cpu_datapath
 );
 	// Data registers
 	logic[15:0] register[7:0]; // 8 16-bit general purpose registers
-	logic[15:0] pc,execute_pc; // Program counter
+	logic[15:0] pc; // Program counter
 	logic[15:0] ir; // Instruction register
 	
 	// Internal signals
@@ -121,7 +121,6 @@ module cpu_datapath
 		if(reset) begin
 			execute_opcode <= 5'd0;
 			execute_Rx <= 3'd0;
-			execute_pc <= 16'd0;
 			n <= 1'd0;
 			z <= 1'd0;
 			ALU_out <= 16'd0;
@@ -129,7 +128,6 @@ module cpu_datapath
 		else begin
 			execute_opcode <= read_opcode;
 			execute_Rx <= Rx;
-			execute_pc <= pc;
 			
 			// N and Z flags
 			if(ldnz) begin

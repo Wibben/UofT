@@ -1,5 +1,5 @@
 Analysis & Synthesis report for harness
-Wed Mar 25 14:08:54 2020
+Thu Mar 26 09:58:38 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 25 14:08:54 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 26 09:58:38 2020       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; harness                                     ;
 ; Top-level Entity Name           ; harness                                     ;
@@ -169,16 +169,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
-; cpu_datapath.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu_datapath.sv ;         ;
-; cpu_control.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu_control.sv  ;         ;
-; cpu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu.sv          ;         ;
-; harness.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv      ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
+; cpu_datapath.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu_datapath.sv ;         ;
+; cpu_control.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu_control.sv  ;         ;
+; cpu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu.sv          ;         ;
+; harness.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv      ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -326,115 +326,114 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 25 14:08:32 2020
+    Info: Processing started: Thu Mar 26 09:58:16 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off harness -c harness
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_datapath.sv
-    Info (12023): Found entity 1: cpu_datapath File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu_datapath.sv Line: 2
+    Info (12023): Found entity 1: cpu_datapath File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu_datapath.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_control.sv
-    Info (12023): Found entity 1: cpu_control File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu_control.sv Line: 2
+    Info (12023): Found entity 1: cpu_control File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu_control.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: cpu File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu.sv Line: 1
+    Info (12023): Found entity 1: cpu File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file harness.sv
-    Info (12023): Found entity 1: harness File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 1
+    Info (12023): Found entity 1: harness File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 1
 Info (12127): Elaborating entity "harness" for the top level hierarchy
-Info (12128): Elaborating entity "cpu" for hierarchy "cpu:DUT" File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 51
-Info (12128): Elaborating entity "cpu_datapath" for hierarchy "cpu:DUT|cpu_datapath:cpu_dp" File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu.sv Line: 43
-Warning (10036): Verilog HDL or VHDL warning at cpu_datapath.sv(26): object "execute_pc" assigned a value but never read File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu_datapath.sv Line: 26
-Info (12128): Elaborating entity "cpu_control" for hierarchy "cpu:DUT|cpu_control:cpu_ctrl" File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu.sv Line: 59
-Warning (10270): Verilog HDL Case Statement warning at cpu_control.sv(49): incomplete case statement has no default case item File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu_control.sv Line: 49
-Warning (10270): Verilog HDL Case Statement warning at cpu_control.sv(143): incomplete case statement has no default case item File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/cpu_control.sv Line: 143
+Info (12128): Elaborating entity "cpu" for hierarchy "cpu:DUT" File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 51
+Info (12128): Elaborating entity "cpu_datapath" for hierarchy "cpu:DUT|cpu_datapath:cpu_dp" File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu.sv Line: 43
+Info (12128): Elaborating entity "cpu_control" for hierarchy "cpu:DUT|cpu_control:cpu_ctrl" File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu.sv Line: 59
+Warning (10270): Verilog HDL Case Statement warning at cpu_control.sv(49): incomplete case statement has no default case item File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu_control.sv Line: 49
+Warning (10270): Verilog HDL Case Statement warning at cpu_control.sv(143): incomplete case statement has no default case item File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/cpu_control.sv Line: 143
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "o_pc_rd" is stuck at VCC File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 7
+    Warning (13410): Pin "o_pc_rd" is stuck at VCC File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (15717): Design contains 83 virtual pins; timing numbers associated with paths containing virtual pins are estimates
-    Info (15719): Pin "o_pc_addr[0]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[1]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[2]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[3]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[4]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[5]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[6]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[7]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[8]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[9]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[10]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[11]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[12]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[13]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[14]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_addr[15]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_pc_rd" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 7
-    Info (15719): Pin "o_ldst_addr[0]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[1]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[2]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[3]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[4]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[5]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[6]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[7]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[8]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[9]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[10]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[11]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[12]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[13]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[14]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_addr[15]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_rd" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 11
-    Info (15719): Pin "o_ldst_wr" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 12
-    Info (15719): Pin "o_ldst_wrdata[0]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[1]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[2]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[3]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[4]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[5]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[6]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[7]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[8]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[9]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[10]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[11]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[12]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[13]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[14]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15719): Pin "o_ldst_wrdata[15]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 26
-    Info (15718): Pin "i_pc_rddata[1]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[2]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[3]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[0]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_ldst_rddata[0]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_pc_rddata[10]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[8]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[9]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_ldst_rddata[1]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[2]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[3]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[4]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[5]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[6]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[7]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[8]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[9]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[10]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[11]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[12]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[13]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[14]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_ldst_rddata[15]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 13
-    Info (15718): Pin "i_pc_rddata[4]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[7]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[5]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[6]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[11]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[12]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[13]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[14]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
-    Info (15718): Pin "i_pc_rddata[15]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7Part4/harness.sv Line: 8
+    Info (15719): Pin "o_pc_addr[0]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[1]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[2]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[3]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[4]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[5]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[6]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[7]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[8]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[9]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[10]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[11]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[12]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[13]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[14]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_addr[15]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_pc_rd" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 7
+    Info (15719): Pin "o_ldst_addr[0]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[1]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[2]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[3]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[4]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[5]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[6]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[7]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[8]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[9]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[10]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[11]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[12]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[13]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[14]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_addr[15]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_rd" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 11
+    Info (15719): Pin "o_ldst_wr" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 12
+    Info (15719): Pin "o_ldst_wrdata[0]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[1]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[2]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[3]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[4]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[5]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[6]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[7]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[8]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[9]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[10]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[11]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[12]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[13]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[14]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15719): Pin "o_ldst_wrdata[15]" is virtual output pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 26
+    Info (15718): Pin "i_pc_rddata[1]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[2]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[3]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[0]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_ldst_rddata[0]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_pc_rddata[10]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[8]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[9]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_ldst_rddata[1]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[2]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[3]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[4]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[5]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[6]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[7]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[8]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[9]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[10]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[11]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[12]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[13]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[14]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_ldst_rddata[15]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 13
+    Info (15718): Pin "i_pc_rddata[4]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[7]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[5]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[6]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[11]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[12]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[13]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[14]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
+    Info (15718): Pin "i_pc_rddata[15]" is virtual input pin File: C:/Users/Bing/Desktop/Bing/U of T/ECE342/Lab7/Part4/harness.sv Line: 8
 Warning (15752): Ignored 82 Virtual Pin logic option assignments
     Warning (15720): Ignored Virtual Pin assignment to node "o_pc_addr[0]~reg0"
     Warning (15720): Ignored Virtual Pin assignment to node "o_pc_addr[1]~reg0"
@@ -522,10 +521,10 @@ Info (21057): Implemented 540 device resources after synthesis - the final resou
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
     Info (21061): Implemented 538 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
-    Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Wed Mar 25 14:08:54 2020
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 88 warnings
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Thu Mar 26 09:58:38 2020
     Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:46
+    Info: Total CPU time (on all processors): 00:00:45
 
 

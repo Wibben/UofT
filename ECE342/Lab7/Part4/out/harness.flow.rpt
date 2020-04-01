@@ -1,5 +1,5 @@
 Flow report for harness
-Wed Mar 25 14:10:51 2020
+Thu Mar 26 10:00:53 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Mar 25 14:10:40 2020       ;
+; Flow Status                     ; Successful - Thu Mar 26 10:00:41 2020       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; harness                                     ;
 ; Top-level Entity Name           ; harness                                     ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/25/2020 14:08:34 ;
+; Start date & time ; 03/26/2020 09:58:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; harness             ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +--------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                ; 48751572623284.158515971312876         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                ; 48751572623284.158523109704748         ; --            ; --          ; --         ;
 ; FITTER_EFFORT                        ; Standard Fit                           ; Auto Fit      ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --         ;
@@ -104,10 +104,10 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4807 MB             ; 00:00:45                           ;
-; Fitter               ; 00:01:32     ; 1.0                     ; 6310 MB             ; 00:02:50                           ;
-; Assembler            ; 00:00:11     ; 1.0                     ; 4832 MB             ; 00:00:10                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.2                     ; 5119 MB             ; 00:00:10                           ;
-; Total                ; 00:02:15     ; --                      ; --                  ; 00:03:55                           ;
+; Fitter               ; 00:01:45     ; 1.0                     ; 6308 MB             ; 00:02:49                           ;
+; Assembler            ; 00:00:12     ; 1.0                     ; 4832 MB             ; 00:00:10                           ;
+; Timing Analyzer      ; 00:00:10     ; 1.2                     ; 5120 MB             ; 00:00:10                           ;
+; Total                ; 00:02:29     ; --                      ; --                  ; 00:03:54                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
