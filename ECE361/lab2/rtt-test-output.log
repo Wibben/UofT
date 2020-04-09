@@ -1,0 +1,7 @@
+ARQ protocol: stopandwait
+Frame size: 1
+Frames sent: 50
+Frames delivered: 50
+Total transmission time: 0:00:15.523083
+Average RTT: 0:00:00.310341
+Maximum RTT: 0:00:00.605669

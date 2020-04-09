@@ -1,0 +1,1000 @@
+Killed
+(.venv) ]0;ubuntu@ece361: ~/lab5[01;32mubuntu@ece361[00m:[01;34m~/lab5[00m$ source ~/lab5/.venv/bin/activate
+ryu-manager ~/lab5/.controller_app.py
+]0;ubuntu@ece361: ~/lab5[01;32mubuntu@ece361[00m:[01;34m~/lab5[00m$ source ~/lab5/.venv/bin/activate
+(.venv) ]0;ubuntu@ece361: ~/lab5[01;32mubuntu@ece361[00m:[01;34m~/lab5[00m$ ryu-manager ~/lab5/.controller_app.py
+loading app /home/ubuntu/lab5/.controller_app.py
+loading app ryu.controller.ofp_handler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+instantiating app /home/ubuntu/lab5/.controller_app.py of MyController
+Bridge Registration [s1, dpid: 1]: [s1-eth1] = [1, 0a:73:ec:0c:30:fa]
+Bridge Registration [s1, dpid: 1]: [s1-eth2] = [2, ba:e8:1f:af:11:48]
+Bridge Registration [s1, dpid: 1]: [s1-eth3] = [3, 2e:99:35:fb:91:67]
+Bridge Registration [s2, dpid: 2]: [s2-eth1] = [1, c6:54:e2:ad:8f:b1]
+Bridge Registration [s2, dpid: 2]: [s2-eth2] = [2, 0e:d4:c5:73:1d:71]
+Bridge Registration [s3, dpid: 3]: [s3-eth1] = [1, 3a:9c:8b:c2:08:95]
+Bridge Registration [s3, dpid: 3]: [s3-eth2] = [2, 0e:84:c1:88:50:3c]
+Bridge Registration [s3, dpid: 3]: [s3-eth3] = [3, 32:9b:6f:ae:83:d2]
+Bridge Registration [s4, dpid: 4]: [s4-eth1] = [1, 26:e9:7f:16:fc:07]
+Bridge Registration [s4, dpid: 4]: [s4-eth2] = [2, d6:cc:40:4a:fc:72]
+Bridge Registration [s4, dpid: 4]: [s4-eth3] = [3, 12:3a:0f:1e:75:37]
+added something
+[dpid: 4]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:ff:fb:91:67) = -1
+added something
+[dpid: 3]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:ff:fb:91:67) = -1
+added something
+[dpid: 2]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:ff:fb:91:67) = -1
+added something
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+added something
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+added something
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+added something
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+added something
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+added something
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+added something
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+added something
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+added something
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+added something
+[dpid: 4]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+added something
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+added something
+[dpid: 1]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+added something
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+added something
+[dpid: 3]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+added something
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 33:33:ff:00:00:04) = -1
+added something
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 33:33:ff:00:00:03) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:ff:00:00:04) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 33:33:ff:00:00:05) = -1
+added something
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:ff:00:00:03) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:ff:00:00:04) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:ff:00:00:04) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:ff:00:00:05) = -1
+added something
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:ff:00:00:03) = -1
+added something
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:ff:00:00:03) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:ff:00:00:05) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:ff:00:00:05) = -1
+added something
+[dpid: 3]: learn_mac_to_port(12:3a:0f:1e:75:37, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:ff:1e:75:37) = -1
+added something
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+added something
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+added something
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+added something
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+added something
+[dpid: 1]: learn_mac_to_port(26:e9:7f:16:fc:07, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+added something
+[dpid: 4]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:ff:ae:83:d2) = -1
+added something
+[dpid: 1]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:ff:ae:83:d2) = -1
+added something
+[dpid: 2]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:ff:ae:83:d2) = -1
+[dpid: 1]: learn_mac_to_port(26:e9:7f:16:fc:07, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:ff:16:fc:07) = -1
+[dpid: 3]: learn_mac_to_port(12:3a:0f:1e:75:37, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:ff:73:1d:71) = -1
+[dpid: 1]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:ff:73:1d:71) = -1
+[dpid: 3]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:ff:73:1d:71) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 33:33:ff:00:00:01) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:ff:00:00:01) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:ff:00:00:01) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:ff:00:00:01) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 33:33:ff:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:ff:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:ff:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:ff:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+added something
+[dpid: 2]: learn_mac_to_port(d6:cc:40:4a:fc:72, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(d6:cc:40:4a:fc:72, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(d6:cc:40:4a:fc:72, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(12:3a:0f:1e:75:37, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(12:3a:0f:1e:75:37, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(26:e9:7f:16:fc:07, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(26:e9:7f:16:fc:07, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(12:3a:0f:1e:75:37, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(26:e9:7f:16:fc:07, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:16) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:16) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:16) = -1
+[dpid: 2]: learn_mac_to_port(d6:cc:40:4a:fc:72, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(12:3a:0f:1e:75:37, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(26:e9:7f:16:fc:07, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 2]: learn_mac_to_port(d6:cc:40:4a:fc:72, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(2e:99:35:fb:91:67, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(12:3a:0f:1e:75:37, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(32:9b:6f:ae:83:d2, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(26:e9:7f:16:fc:07, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 2)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(0e:d4:c5:73:1d:71, in_port: 3)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 33:33:00:00:00:02) = -1
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 33:33:00:00:00:02) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 33:33:00:00:00:02) = -1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 33:33:00:00:00:02) = -1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:01) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:01] = 2
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:03) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:03] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:01) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:01] = 2
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:01) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:01] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:04) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:04] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:01) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:01] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:01) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:01] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:05) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:05] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:01) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:01] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:02) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:02] = 2
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:03) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:03] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:02) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:02] = 2
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:02) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:02] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:04) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:04] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:02) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:02] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:02) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:02] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:05) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:05] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:02) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:02] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:01) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:01] = 2
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:03) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:03] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:01, in_port: 2)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:02) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:02] = 2
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:03) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:03] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:03) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:03] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:04) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:04] = 2
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:03) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:03] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:03) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:03] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:05) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:05] = 2
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:03) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:03] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:01) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:01] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:04) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:04] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:02) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:02] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:04) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:04] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:03) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:03] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:04, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:04, in_port: 2)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:04) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:04] = 2
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: get_out_port(3, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 4]: get_out_port(4, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 2]: get_out_port(2, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 1]: get_out_port(1, ff:ff:ff:ff:ff:ff) = -1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:01) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:01] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:05) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:05] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:01, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:01, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:02) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:02] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: learn_mac_to_port(00:00:00:00:00:02, in_port: 2)
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:05) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:05] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:02, in_port: 1)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:02, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:03) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:03] = 3
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:05, in_port: 3)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: learn_mac_to_port(00:00:00:00:00:03, in_port: 1)
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:05) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:05] = 2
+[dpid: 4]: learn_mac_to_port(00:00:00:00:00:03, in_port: 2)
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:03, in_port: 3)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:05, in_port: 2)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: learn_mac_to_port(00:00:00:00:00:04, in_port: 1)
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:01) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:01] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:05) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:05] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:02) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:02] = 3
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:01) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:01] = 2
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:05) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:05] = 3
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:03) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:03] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:02) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:02] = 2
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:03) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:03] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:03) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:03] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:05) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:05] = 2
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:05) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:05] = 3
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:01) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:01] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:01) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:01) = 1
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:01] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:04) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:04] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:02) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:02] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:02) = 1
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:02] = 1
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:02) = 2
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:02] = 2
+[dpid: 1]: get_out_port(1, 00:00:00:00:00:04) = 3
+[dpis: 1]: forwarding_table[1][00:00:00:00:00:04] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:03) = 3
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:03] = 3
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:03) = 2
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:03] = 2
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:03) = 1
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:03] = 1
+[dpid: 2]: get_out_port(2, 00:00:00:00:00:04) = 2
+[dpis: 2]: forwarding_table[2][00:00:00:00:00:04] = 2
+[dpid: 4]: get_out_port(4, 00:00:00:00:00:04) = 3
+[dpis: 4]: forwarding_table[4][00:00:00:00:00:04] = 3
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:04) = 1
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:04] = 1
+[dpid: 3]: get_out_port(3, 00:00:00:00:00:05) = 2
+[dpis: 3]: forwarding_table[3][00:00:00:00:00:05] = 2
+Killed
+(.venv) ]0;ubuntu@ece361: ~/lab5[01;32mubuntu@ece361[00m:[01;34m~/lab5[00m$ 

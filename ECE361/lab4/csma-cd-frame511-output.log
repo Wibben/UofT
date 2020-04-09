@@ -1,0 +1,90 @@
+
+====================
+SIMULATION PARAMETERS:
+  - NUM_STATIONS = 3
+  - NUM_FRAMES = 1000000 (per station)
+  - ARR_RATE = 10000.0 (frames / sec)
+  - FRAME_SIZE = 511 (bits)
+  - MEDIUM_BW = 10000000 (bits / sec)
+  - MEDIUM_DIAMETER = 2500 (metres)
+  - MEDIUM_VELOCITY = 97656250 (metres / sec)
+  - SERIALIZATION_DELAY = 5.11e-05 (sec)
+  - PROP_DELAY = 2.56e-05 (sec)
+  - NORM_DELAY_BW = 0.5009784735812133
+
+====================
+Generating arrival times...
+Generated 3000000 arrivals in 2.3920178413391113 seconds
+
+====================
+Starting CSMA-CD simulation...
+
+Progress update (0 seconds)
+Station 0 has 999999 remaining frames
+Station 1 has 1000000 remaining frames
+Station 2 has 1000000 remaining frames
+
+Progress update (1 seconds)
+Station 0 has 927026 remaining frames
+Station 1 has 927509 remaining frames
+Station 2 has 927066 remaining frames
+
+Progress update (2 seconds)
+Station 0 has 821304 remaining frames
+Station 1 has 822361 remaining frames
+Station 2 has 821568 remaining frames
+
+Progress update (3 seconds)
+Station 0 has 714235 remaining frames
+Station 1 has 714843 remaining frames
+Station 2 has 714219 remaining frames
+
+Progress update (4 seconds)
+Station 0 has 611287 remaining frames
+Station 1 has 611343 remaining frames
+Station 2 has 611126 remaining frames
+
+Progress update (5 seconds)
+Station 0 has 522752 remaining frames
+Station 1 has 522717 remaining frames
+Station 2 has 522716 remaining frames
+
+Progress update (6 seconds)
+Station 0 has 421275 remaining frames
+Station 1 has 421243 remaining frames
+Station 2 has 420870 remaining frames
+
+Progress update (7 seconds)
+Station 0 has 316753 remaining frames
+Station 1 has 316964 remaining frames
+Station 2 has 316404 remaining frames
+
+Progress update (8 seconds)
+Station 0 has 213121 remaining frames
+Station 1 has 212970 remaining frames
+Station 2 has 212650 remaining frames
+
+Progress update (9 seconds)
+Station 0 has 109675 remaining frames
+Station 1 has 109474 remaining frames
+Station 2 has 109364 remaining frames
+
+Progress update (10 seconds)
+Station 0 has 10690 remaining frames
+Station 1 has 10219 remaining frames
+Station 2 has 9976 remaining frames
+
+Finished transmitting frames from all stations
+Elapsed real time: 10.10027 seconds
+Elapsed simulation time: 294.50568 seconds
+
+====================
+Stations' statistics (stations' point-of-view):
+  - Number of successful transmissions: 1193847 (39.795 %)
+  - Number of frame collisions: 1806153
+  - Efficiency of channel utilization: 20.715 %
+
+Actual statistics:
+  - Number of successful transmissions: 1187388 (39.58 %)
+  - Number of frame collisions: 1812612
+  - Efficiency of channel utilization: 20.602 %
