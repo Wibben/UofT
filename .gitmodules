@@ -1,0 +1,3 @@
+[submodule "ECE568"]
+	path = ECE568
+	url = https://github.com/Wibben/ECE568.git
