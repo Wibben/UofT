@@ -1,3 +1,6 @@
 [submodule "ECE568"]
 	path = ECE568
 	url = https://github.com/Wibben/ECE568.git
+[submodule "ECE552/Code/Computer-Architecture"]
+	path = ECE552/Code/Computer-Architecture
+	url = https://github.com/tapasvipatel/Computer-Architecture.git
